@@ -1,12 +1,12 @@
 FROM alpine
 LABEL MAINTAINER="James O'Beirne <james@chaincode.com>"
 
-ARG VERSION=0.17.2
+ARG VERSION=0.18.1
 ARG GLIBC_VERSION=2.28-r0
 
 ENV COINNAME qtum
 ENV FILENAME ${COINNAME}-${VERSION}-x86_64-linux-gnu.tar.gz
-ENV DOWNLOAD_URL https://s.qtum.site/${FILENAME}
+ENV DOWNLOAD_URL https://s.qtum.site/wallet/desktop/${FILENAME}
 
 # Some of this was unabashadly yanked from
 # https://github.com/szyhf/DIDockerfiles/blob/master/bitcoin/alpine/Dockerfile
